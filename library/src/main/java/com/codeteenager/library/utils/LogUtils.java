@@ -25,6 +25,12 @@ public class LogUtils {
             Log.e(tag, msg);
     }
 
+    public static void w(String tag, String msg) {
+        if (isDebug) {
+            Log.w(tag, msg);
+        }
+    }
+
     public static void v(String tag, String msg) {
         if (isDebug)
             Log.v(tag, msg);
